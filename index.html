@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Sindhu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <audio id="background-music" autoplay loop>
+    <source src="song.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+ 
+  <!-- Music Controls -->
+  <div class="music-controls">
+    <button id="play-btn" onclick="document.getElementById('background-music').play()">🎵 Play</button>
+    <button id="pause-btn" onclick="document.getElementById('background-music').pause()">🔇 Pause</button>
+  </div>
+
+  <!-- Page 1 -->
+  <div class="page active" id="page1">
+    <h1>Happy Birthday, Sindhu! ❤️</h1>
+    <h2>(A wonderful new year too)</h2>
+    <img src="cake.jpg" alt="Cake" class="cake-image">
+    <p class="note">Sweet, just like you✨</p>
+    <div id="confetti-container"></div>
+    <button class="nav-btn next">Next</button>
+  </div>
+
+  <!-- Page 2 -->
+  <div class="page" id="page2">
+    <h1>🫶Memories🫶</h1>
+    <img src="collage.png" alt="Photo Collage" class="collage-image">
+    <p>Pictures to remind you of good times 🌟</p>
+    <p>Here's to many more beautiful and unforgettable moments together 💕💕</p>
+    <button class="nav-btn prev">Previous</button>
+    <button class="nav-btn next">Next</button>
+  </div>
+
+  <!-- Page 3 -->
+  <div class="page" id="page3">
+    <div class="content-wrapper">
+      <div class="three-column-layout">
+        <div class="side-card fun-fact-card">
+          <div class="pin"></div>
+          <h2 class="section-title">A fun fact about your name🌊🌊</h2>
+          <div class="card-content">
+            <p>Did you know that your name is historically very significant? The ancient Indians  used to call the river we know as Indus as Sindhu . The Persians, living on the other side of the river, called it Hindu, as they had difficulties pronouncing 'S'. The Greeks, who came after the Persians, called it Indus, from which comes India. </p>
+          </div>
+        </div>
+
+        <div class="center-card about-us-card">
+          <div class="pin"></div>
+          <div class="tape tape-left"></div>
+          <div class="tape tape-right"></div>
+          <h2 class="section-title">A note</h2>
+          <div class="card-content">
+            <p>Sindhu,
+              <br>
+              Getting to know you has been nothing short of magical. Every moment spent with you has made my heart feel fuller, and the more I learn about you, the more you shine in my eyes. You’ve become so incredibly special to me, and I am so grateful to have you in my life. Our first date was one of the happiest days of my life, and I can’t wait to create countless more memories with you.
+On your birthday, I wish you nothing but the purest happiness, and may all your dreams come true. You deserve the world, Sindhu, and I’m just so lucky to be a part of it. Thank you for being the beautiful, funny, and amazing person you are, and for lighting up my world every day.
+To quote the great singer Jacques Bermon Webster II,     
+"When I'm with you, I feel alive."💕💕💕💕</p>
+          </div>
+        </div>
+
+        <div class="side-card tierlist-card">
+          <div class="pin"></div>
+          <h2 class="section-title">A tierlist ranking your likes/dislikes</h2>
+          <h3>(i clearly need to know a lot more about you lol, this was all the top of my head)</h3>
+          <div class="card-content">
+            <a href="my-image.png" target="_blank">
+              <img src="my-image.png" class="tierlist-image" alt="Tierlist">
+              <p>click on the image</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gif-container">
+        <img src="birthday.gif" alt="Birthday celebration gif" class="celebration-gif">
+        <img src="dog.gif" alt="Dog celebration gif" class="celebration-gif">
+      </div>
+
+      <button class="nav-btn prev">Previous</button>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="footer">Made with ❤️ for Sindhu by Siddhanth</footer>
+  <script src="script.js"></script>
+</body>
+</html>
